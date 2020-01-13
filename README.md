@@ -1,16 +1,14 @@
-# respect_women_button
+# Respect Women Button
+Based on tweets by Twitter user Doc Wolverine ([@Doc_Wolverine](twitter.com/Doc_Wolverine)), this Flutter app is a simple yet expressive button for letting that sad man know he needs to show "more interest in someone than just in the anatomy of theirs that you want to use for your own pleasure".
 
-A new Flutter project.
+## Authors
+* **Legend Vildhund** - [wilddogcode](github.com/wilddogcode)
+* **Doc Wolverine** - [@Doc_Wolverine](twitter.com/Doc_Wolverine)
 
-## Getting Started
+## Versioning
 
-This project is a starting point for a Flutter application.
+I use [SemVer](http://semver.org/) for versioning.
 
-A few resources to get you started if this is your first Flutter project:
+## License
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+*Respect Women Button* is licensed under the MIT License
