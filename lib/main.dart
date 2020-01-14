@@ -6,6 +6,7 @@ Color grad1 = Color(0xFFFF5F5F);
 Color grad2 = Color(0xFFE65050);
 Color shadow1 = Color(0xFFFF6666);
 Color shadow2 = Color(0xFFD94C4C);
+Color textColor = Colors.grey[580];
 
 void main() => runApp(MyApp());
 
@@ -97,7 +98,7 @@ class _ButtonPageState extends State<ButtonPage> {
                         fontWeight: FontWeight.w700,
                         fontSize: 58,
                         letterSpacing: -2,
-                        color: Color(0xFFFFFFFF)
+                        color: textColor
                       )
                     )
                   ],
