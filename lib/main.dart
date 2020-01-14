@@ -61,7 +61,15 @@ class _ButtonPageState extends State<ButtonPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
-                    
+                    Text(
+                      'Bro',
+                      style: GoogleFonts.openSans(
+                        fontWeight: FontWeight.w700,
+                        fontSize: 58,
+                        letterSpacing: -2,
+                        color: Color(0xFFFFFFFF)
+                      )
+                    )
                   ],
                 ),
               ),
