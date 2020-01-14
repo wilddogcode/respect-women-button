@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:audioplayers/audioplayers.dart';
+import 'package:audioplayers/audio_cache.dart';
 
 Color mainColor = Color(0xFFFF5959);
 Color grad1 = Color(0xFFFF5F5F);
@@ -27,6 +29,19 @@ class ButtonPage extends StatefulWidget {
 class _ButtonPageState extends State<ButtonPage> {
   Color topLeftColor = grad1;
   Color bottomRightColor = grad2;
+  AudioPlayer advancedPlayer;
+  AudioCache audioCache;
+
+  @override
+  void initState(){
+    super.initState();
+    initPlayer();
+  }
+
+  void initPlayer(){
+    advancedPlayer = new AudioPlayer();
+    audioCache = new AudioCache(fixedPlayer: advancedPlayer);
+  }
 
   void updateColor(bool pressed) {
     if (pressed) {
@@ -56,6 +71,7 @@ class _ButtonPageState extends State<ButtonPage> {
           Center(
             child: GestureDetector(
               onTapDown: (_){
+                audioCache.play('bro.mp3');
                 setState(() {
                   updateColor(true);
                 });
