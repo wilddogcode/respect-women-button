@@ -6,8 +6,8 @@ import 'package:audioplayers/audio_cache.dart';
 Color mainColor = Color(0xFFFF5959);
 Color grad1 = Color(0xFFFF5F5F);
 Color grad2 = Color(0xFFE65050);
-Color shadow1 = Color(0xFFFF6666);
-Color shadow2 = Color(0xFFD94C4C);
+Color shadow1 = Color(0xFFFF6e6e);
+Color shadow2 = Color(0xFFc24444);
 Color textColor = Colors.grey[580];
 
 void main() => runApp(MyApp());
