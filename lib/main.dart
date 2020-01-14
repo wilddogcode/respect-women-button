@@ -109,11 +109,12 @@ class _ButtonPageState extends State<ButtonPage> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
                     Text(
-                      'Bro',
-                      style: GoogleFonts.openSans(
-                        fontWeight: FontWeight.w700,
+                      'BRO',
+                      style: GoogleFonts.titilliumWeb(
+                        fontStyle: FontStyle.italic,
+                        fontWeight: FontWeight.w600,
                         fontSize: 58,
-                        letterSpacing: -2,
+                        // letterSpacing: -2,
                         color: textColor
                       )
                     )
