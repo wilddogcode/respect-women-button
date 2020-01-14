@@ -24,6 +24,26 @@ class ButtonPage extends StatefulWidget {
 }
 
 class _ButtonPageState extends State<ButtonPage> {
+  Color topLeftColor = grad1;
+  Color bottomRightColor = grad2;
+
+  void updateColor(bool pressed) {
+    if (pressed) {
+      if (topLeftColor == grad1) {
+        topLeftColor = grad2;
+        bottomRightColor = grad1;
+      }
+    } else if (!pressed) {
+      if (topLeftColor == grad2) {
+        topLeftColor = grad1;
+        bottomRightColor = grad2;
+      }
+    } else {
+      topLeftColor = grad1;
+      bottomRightColor = grad2;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -34,6 +54,16 @@ class _ButtonPageState extends State<ButtonPage> {
         children: <Widget>[
           Center(
             child: GestureDetector(
+              onTapDown: (_){
+                setState(() {
+                  updateColor(true);
+                });
+              },
+              onTapUp: (_){
+                setState(() {
+                  updateColor(false);
+                });
+              },
               child: Container(
                 width: 250,
                 height: 250,
@@ -42,7 +72,7 @@ class _ButtonPageState extends State<ButtonPage> {
                   gradient: LinearGradient(
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
-                    colors: [grad1, grad2]
+                    colors: [topLeftColor, bottomRightColor]
                   ),
                   boxShadow: [
                     new BoxShadow(
