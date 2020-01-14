@@ -19,5 +19,4 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - google_fonts/
     - assets/bro.mp3
